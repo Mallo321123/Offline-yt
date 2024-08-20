@@ -1,4 +1,7 @@
-import yt_dlp, configparser, time, os
+import yt_dlp
+import configparser
+import time
+import os
 
 config = configparser.ConfigParser()
 
@@ -53,4 +56,4 @@ while True:
         
     #delete_old_videos()
     
-    time.sleep(config['generell']['intervall'])
+    time.sleep(float(config['generell']['intervall']))
